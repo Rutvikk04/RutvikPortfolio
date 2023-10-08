@@ -18,16 +18,6 @@ import PPH from "../Assets/PPH.png";
 import Resume from "../Assets/Documents/Resume.pdf"
 import fiver from "../Assets/fiverr.png";
 const Dashboard = () => {
-  const downloadCV = () => {
-    const link = document.createElement('a');
-    link.href = fiver;
-    link.download = 'sample.pdf';
-    document.body.appendChild(link);
-    // link.click();
-    document.body.removeChild(link);
-  };
-
-
   return (
     <>
       <div className="mainContainer flex  h-screen max-sm:flex max-sm:flex-col max-sm:flex-nowrap">
