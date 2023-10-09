@@ -20,14 +20,14 @@ import fiver from "../Assets/fiverr.png";
 const Dashboard = () => {
   return (
     <>
-      <div className="mainContainer flex  h-screen max-sm:flex max-sm:flex-col max-sm:flex-nowrap">
+      <div className="mainContainer flex  h-screen  max-sm:flex max-sm:flex-col max-sm:flex-nowrap">
         <div className="infoDIv flex flex-col justify-between mt-10  w-[130rem] max-sm:w-screen max-sm:text-center ">
           <div className="flex flex-col justify-between h-20 overflow-hidden">
             <div className="text-5xl max-sm:text-4xl space-y-5 py-4 text-center text-gray-500  animate-text-scroll">
+              <h1>Hola...</h1>
               <h1>Hi..</h1>
               <h1>नमस्ते</h1>
               <h1>你好</h1>
-              <h1>Hola...</h1>
               <h1>Bonjour...</h1>
               <h1>やあ..</h1>
               <h1>Hello...</h1>
@@ -138,18 +138,22 @@ const Dashboard = () => {
             {/* Social Media  */}
           </div>
         </div>
-        <div className="relative lg:rounded-tl-[27rem]  imgDiv bg-gray-500 max-h-screen w-full p-2">
+        <div className="relative lg:rounded-tl-[27rem]   imgDiv bg-gray-500 max-h-screen  w-full p-2">
           {/* Image Here */}
           <img
-            className="m-auto w-72 border-2 border-white h-80 object-cover rounded-full"
+            className="m-auto w-64 border-2 max-sm:hidden border-white h-[17rem] object-cover rounded-full"
             src={myPhoto}
             alt="Rutvik"
           />
           <div>
+            <h1 className="text-xl font-bold  text-center mt-4">Hobbies</h1>
+            <p className="text-center font-medium text-white">Reading,Exploring,Gaming,Music</p>
+          </div>
+          <div>
             <h1 className="text-md font-bold  text-center mt-6">
               Social Media
             </h1>
-            <h1 className="   text-2xl font-medium text-white  text-center">
+            <h1 className="text-2xl font-medium text-white  text-center">
               Let's Connect....
             </h1>
             <div className="socialIcons mt-2 flex justify-center space-x-3">
@@ -180,7 +184,7 @@ const Dashboard = () => {
           </div>
           {/* freelance Accounts */}
           <div className=" w-full mt-4 ">
-            <h1 className="text-md font-bold  text-center mt-2">
+            <h1 className="text-md font-bold  text-center mt-6">
               Remote Works
             </h1>
             <h1 className="   text-2xl font-medium text-white  text-center">
