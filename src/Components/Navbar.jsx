@@ -5,7 +5,7 @@ const Navbar = () => {
   const menuItems = ["Home", "Projects", "Experience", "About Me"];
   return (
     <>
-      <nav className="flex fixed z-20 max-md:relative w-screen justify-between h-16 p-5 bg-black text-white ">
+      <nav className="flex fixed  max-md:relative w-screen z-50 justify-between h-16 p-4 bg-black text-white ">
         <h1 className="text-xl">Rutvik</h1>
         <ul className="flex space-x-20 flex-row font-semibold  max-sm:hidden max-md:hidden">
           {menuItems.map((item, index) => {

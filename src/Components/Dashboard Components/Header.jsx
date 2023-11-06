@@ -1,4 +1,4 @@
-import React, { lazy } from "react";
+import React from "react";
 import Resume from "../../Assets/Documents/Resume.pdf";
 import myPhoto from "../../Assets/myphoto.jpg";
 import SocialMedia from "./SocialMedia";
@@ -26,7 +26,7 @@ const Header = () => {
           <h1 className="text-6xl max-md:text-5xl text-center text-white">
             I Am Rutvik..
           </h1>
-          <h1 className="text-xl max-md:text-xl text-center text-gray-300">
+          <h1 className="text-xl max-md:text-xl text-center text-blue-400">
             MERN Stack Developer
           </h1>
         </div>
@@ -43,26 +43,25 @@ const Header = () => {
           <a
             href={Resume}
             download="Rutvik_MERN_Resume"
-            className="outline outline-1 outline-white text-gray-400 font-semibold p-2 rounded-md hover:bg-gray-700 hover:shadow-md hover:shadow-white hover:outline-none hover:text-white transition-shadow duration-200 "
+            className="hero-btn  "
           >
             Download CV
           </a>
           <a
-            download="Rutvik_MERN_Resume"
-            className="outline outline-1 outline-white text-gray-400 font-semibold p-2 rounded-md hover:bg-gray-700 hover:shadow-md hover:shadow-white hover:outline-none hover:text-white transition-shadow duration-200 "
+            className=" hero-btn cursor-pointer"
           >
             Contact Me
           </a>
         </div>
       </div>
       {/* Image And Social Media DIv */}
-      <div className=" max-md:hidden max-lg:hidden w-1/2 flex flex-col h-full justify-center items-left ">
+      <div className="group max-md:hidden max-lg:hidden w-1/2 flex flex-col h-full justify-center items-left ">
         <img
           src={myPhoto}
-          className=" relative  z-40  w-64 h-auto object-fill rounded-lg shadow-2xl shadow-white"
+          className=" relative  z-40  w-64 h-auto object-fill rounded-lg shadow-2xl shadow-white hover:shadow-blue-500 duration-300 ease-linear  "
         />
-        <div className="max-md:hidden absolute  lg:w-64 h-[28rem]  rotate-12 bg-gray-200 opacity-50 shadow-md shadow-white rounded-lg">
-          <div className="max-md:hidden lg:w-64 h-[28rem] z-40 rotate-6 bg-gray-500 opacity-75 shadow-md shadow-white rounded-lg"></div>
+          <div className="max-md:hidden absolute z-20  lg:w-64 h-[28rem]  rotate-12 bg-gray-200 group-hover:bg-blue-500 group-hover:shadow-blue-400 opacity-50 shadow-md shadow-white rounded-lg duration-300 ease-linear">
+          <div className="max-md:hidden lg:w-64 h-[28rem] z-10 rotate-6 bg-gray-500 group-hover:bg-blue-200 group-hover:shadow-blue-400group-hover:bg-blue-200 group-hover:shadow-blue-400 opacity-75 shadow-md shadow-white rounded-lg duration-300 ease-linear"></div>
         </div>
       </div>
     </div>
